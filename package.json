@@ -1,0 +1,25 @@
+{
+  "name": "webpack_memory_issues",
+  "version": "1.0.0",
+  "description": "Sample app to reproduce memory issues",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "node ./bin/generateFiles.js && webpack serve --port 8081 --history-api-fallback",
+    "build": "node ./bin/generateFiles.js && webpack",
+    "debug": "node ./bin/generateFiles.js && npx --node-arg --inspect-brk webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-react": "^7.12.1",
+    "babel-loader": "^8.1.0",
+    "history": "^5.0.0",
+    "html-webpack-plugin": "^4.5.0",
+    "lorem-ipsum": "^2.0.3",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "webpack": "^5.1.2",
+    "webpack-cli": "^4.0.0",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
